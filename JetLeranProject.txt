@@ -1,0 +1,21 @@
+What is the code agenda: 
+
+I made this to be a supervision on servers that don't allow swearing.
+"Bot" Dyno inspired me to make this because i wanted to know how the bot worked.
+The main code has been written and published in python using vs code editor.
+Discord has a "developer portal" where you can make your own discord bot and use discords API called "discord.py".
+
+Features:
+Ban command, bans a member of choice, from the server.
+Kick command, kicks a member of choice, from the server
+Warn command, warn a member of choice.
+Unban command, unbans a member (already banned), from the server.
+
+Warns members for swearing and logs it, in a discord channel, the terminal and a text file then proceeds to delete the message.
+
+Warns a member for spamming (Too much messages in certain amount of time).
+
+
+
+
+
