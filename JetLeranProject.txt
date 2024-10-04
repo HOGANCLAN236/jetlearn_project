@@ -1,21 +1,49 @@
-What is the code agenda: 
+Discord Moderation Bot for Server Supervision
+This project is a Discord bot designed to supervise servers, with a focus on maintaining a clean environment by preventing swearing and spam. The bot was inspired by the well-known "Dyno" bot and aims to provide similar functionality by leveraging the Discord API via the discord.py library. Written in Python using VS Code, the bot offers essential moderation features to help server administrators maintain order and ensure compliance with community guidelines.
 
-I made this to be a supervision on servers that don't allow swearing.
-"Bot" Dyno inspired me to make this because i wanted to know how the bot worked.
-The main code has been written and published in python using vs code editor.
-Discord has a "developer portal" where you can make your own discord bot and use discords API called "discord.py".
+Project Inspiration
+The inspiration for this bot came from a curiosity to understand how moderation bots like Dyno function. By building this bot, the goal was to not only replicate some of the core moderation features but also explore how Discord’s API works and implement a real-time supervision system.
 
-Features:
-Ban command, bans a member of choice, from the server.
-Kick command, kicks a member of choice, from the server
-Warn command, warn a member of choice.
-Unban command, unbans a member (already banned), from the server.
+Key Features
+The bot offers a suite of moderation commands, as well as automatic supervision mechanisms to monitor user behavior, particularly related to inappropriate language and spamming. Below are the main features:
 
-Warns members for swearing and logs it, in a discord channel, the terminal and a text file then proceeds to delete the message.
+Ban Command (!ban <user>):
 
-Warns a member for spamming (Too much messages in certain amount of time).
+Allows moderators to ban a specific user from the server. This removes the member and restricts them from rejoining until unbanned.
+Kick Command (!kick <user>):
 
+Enables moderators to kick a user from the server. This temporarily removes the member but allows them to rejoin if invited back.
+Warn Command (!warn <user>):
 
+Sends a warning to a specific member. This is useful for dealing with users who violate server rules without immediately resorting to harsher punishments like banning or kicking.
+Unban Command (!unban <user>):
 
+Allows a previously banned user to be unbanned, reinstating their access to the server.
+Swearing Detection and Logging:
 
+The bot monitors messages for offensive language and issues a warning if a user swears.
+The offending message is deleted, and the bot logs the incident in three locations:
+Discord Channel: A designated moderation channel within the server.
+Terminal Output: Real-time log in the bot's terminal session.
+Text File: A permanent log stored as a text file for record-keeping.
+Spam Detection:
 
+Monitors users for spamming behavior, such as sending too many messages in a short amount of time.
+Users who spam are automatically warned, and the event is logged similarly to swearing incidents.
+Technical Details
+Language & Tools:
+
+The bot is written in Python using the VS Code editor for development.
+Discord API Integration:
+
+The bot uses discord.py, a Python wrapper for the Discord API. Discord's developer portal was used to create and configure the bot, including token generation, permission settings, and API access.
+Real-Time Supervision:
+
+The bot operates continuously within the server to track user messages in real-time, enforcing rules without manual intervention from the server administrators.
+Data Logging:
+
+Each moderation action (warnings, kicks, bans) is logged for future reference. This ensures transparency and allows server administrators to keep track of user behavior and actions taken against them.
+Use Case:
+This bot is ideal for Discord servers where strict rules around language and spam are enforced. Communities such as gaming servers, educational groups, or professional networks can benefit from the bot’s automated supervision, freeing up moderators from manually policing user behavior. Additionally, the bot's flexibility allows for easy scaling and customization to suit the specific needs of different servers.
+
+This bot offers essential moderation tools and real-time supervision for a cleaner, safer Discord environment. With features like automatic message deletion, spam detection, and detailed logging, it ensures that server rules are consistently enforced.
