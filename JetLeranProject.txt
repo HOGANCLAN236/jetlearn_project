@@ -1,5 +1,5 @@
 Discord Moderation Bot for Server Supervision
-This project is a Discord bot designed to supervise servers, with a focus on maintaining a clean environment by preventing swearing and spam. The bot was inspired by the well-known "Dyno" bot and aims to provide similar functionality by leveraging the Discord API via the discord.py library. Written in Python using VS Code, the bot offers essential moderation features to help server administrators maintain order and ensure compliance with community guidelines.
+This project is a Discord bot designed to supervise servers, with a focus on maintaining a clean environment by preventing swearing and spam. It is written in Python using VS Code. The bot offers essential moderation features by leveraging the Discord API via the discord.py library to help server administrators maintain order and ensure compliance within the community guidelines.
 
 Project Inspiration
 The inspiration for this bot came from a curiosity to understand how moderation bots like Dyno function. By building this bot, the goal was to not only replicate some of the core moderation features but also explore how Discord’s API works and implement a real-time supervision system.
